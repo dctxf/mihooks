@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@dctxf/mihooks": ["./packages/hooks/index.ts"],
+      "@dctxf/service": ["./packages/service/index.ts"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "declaration": false,
+    "strictNullChecks": true,
+    "importHelpers": true
+  },
+  "include": ["packages/**/*"],
+  "exclude": ["node_modules", "lib", "es", "dist", "example"]
+}
