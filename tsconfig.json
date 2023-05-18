@@ -14,6 +14,5 @@
       "@dctxf/service": ["./packages/service/src/index.ts"]
     },
   },
-  "include": ["packages/**/*"],
   "exclude": ["node_modules"]
 }

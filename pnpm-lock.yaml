@@ -61,7 +61,11 @@ importers:
         specifier: ^18.2.6
         version: 18.2.6
 
-  packages/service: {}
+  packages/service:
+    dependencies:
+      '@dctxf/service':
+        specifier: workspace:^
+        version: 'link:'
 
 packages:
 
