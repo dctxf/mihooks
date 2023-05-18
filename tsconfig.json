@@ -8,6 +8,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
+    "incremental": false,
     "paths": {
       "@dctxf/mihooks": ["./packages/hooks/src/index.ts"],
       "@dctxf/service": ["./packages/service/src/index.ts"]
