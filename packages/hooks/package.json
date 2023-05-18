@@ -9,6 +9,13 @@
     "test": "jest",
     "build": "tsc"
   },
+  "files": [
+    "lib",
+    "es",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
