@@ -2,9 +2,12 @@
   "name": "@dctxf/service",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

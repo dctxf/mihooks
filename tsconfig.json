@@ -7,16 +7,13 @@
     "downlevelIteration": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "paths": {
-      "@dctxf/mihooks": ["./packages/hooks/index.ts"],
-      "@dctxf/service": ["./packages/service/index.ts"]
-    },
     "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "declaration": false,
-    "strictNullChecks": true,
-    "importHelpers": true
+    "outDir": "./lib",
+    "paths": {
+      "@dctxf/mihooks": ["./packages/hooks/src/index.ts"],
+      "@dctxf/service": ["./packages/service/src/index.ts"]
+    },
   },
   "include": ["packages/**/*"],
-  "exclude": ["node_modules", "lib", "es", "dist", "example"]
+  "exclude": ["node_modules", "lib", "es", "**/__test__/**/*","**/*.test.ts"]
 }

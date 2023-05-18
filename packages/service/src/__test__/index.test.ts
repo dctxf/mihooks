@@ -1,4 +1,4 @@
-import { pushByBark } from '.';
+import { pushByBark } from '../bark';
 
 describe('pushByBark', () => {
   it('should be defined', () => {

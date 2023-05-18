@@ -1,5 +1,5 @@
 import { act, renderHook } from '@testing-library/react';
-import { useBark } from '.';
+import { useBark } from '../useBark';
 
 const apiUrl = 'https://api.dctxf.com/mGTPVYeE3gFFknswfemUHC'
 
