@@ -3,6 +3,19 @@ lockfileVersion: '6.0'
 importers:
 
   .:
+    dependencies:
+      '@dctxf/hooks':
+        specifier: workspace:*
+        version: link:packages/hooks
+      '@dctxf/service':
+        specifier: workspace:*
+        version: link:packages/service
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
     devDependencies:
       '@testing-library/react':
         specifier: ^14.0.0
@@ -40,6 +53,9 @@ importers:
 
   packages/hooks:
     dependencies:
+      '@dctxf/service':
+        specifier: workspace:^
+        version: link:../service
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
         version: 18.2.0
@@ -50,6 +66,8 @@ importers:
       '@types/react':
         specifier: ^18.2.6
         version: 18.2.6
+
+  packages/service: {}
 
 packages:
 
@@ -3103,7 +3121,6 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
-    dev: true
 
   /react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
@@ -3205,7 +3222,6 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
-    dev: true
 
   /semver@6.3.0:
     resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}

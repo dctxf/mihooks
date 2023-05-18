@@ -3,7 +3,7 @@
  * 详细文档请查看
  * @see https://bark.day.app/#/tutorial?id=%e8%af%b7%e6%b1%82%e6%96%b9%e5%bc%8f
  */
-export type MessageData = {
+export type PushByBarkParams = {
   apiUrl?: string
   // 推送标题
   title?: string
@@ -43,7 +43,7 @@ export type MessageData = {
  * @param params
  * @returns
  */
-export const pushByBark = async ({ title, body, apiUrl, ...params }: MessageData) => {
+export const pushByBark = async ({ title, body, apiUrl, ...params }: PushByBarkParams) => {
   let url = apiUrl || process.env.BARK_API;
   if (!url) {
     return Promise.reject(new Error('please set bark api url'));

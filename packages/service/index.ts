@@ -1,4 +1,6 @@
-import { pushByBark } from "./bark";
+import { pushByBark, PushByBarkParams } from "./bark";
 
-export { pushByBark };
+export { pushByBark, };
+export type { PushByBarkParams };
+
 

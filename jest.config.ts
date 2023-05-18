@@ -12,7 +12,7 @@ const config: Config = {
     '^.+\\.tsx?$': ['ts-jest', { tsconfig: 'tsconfig.json' }],
   },
   collectCoverageFrom: [
-    '<rootDir>/**/src/**/*.{js,jsx,ts,tsx}',
+    '<rootDir>/packages/**/*.{js,jsx,ts,tsx}',
   ],
   transformIgnorePatterns: ['^.+\\.js$'],
 }
