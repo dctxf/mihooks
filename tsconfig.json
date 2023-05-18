@@ -8,12 +8,11 @@
     "sourceMap": true,
     "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
-    "outDir": "./lib",
     "paths": {
       "@dctxf/mihooks": ["./packages/hooks/src/index.ts"],
       "@dctxf/service": ["./packages/service/src/index.ts"]
     },
   },
   "include": ["packages/**/*"],
-  "exclude": ["node_modules", "lib", "es", "**/__test__/**/*","**/*.test.ts"]
+  "exclude": ["node_modules"]
 }

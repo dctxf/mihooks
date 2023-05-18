@@ -4,12 +4,6 @@ importers:
 
   .:
     dependencies:
-      '@dctxf/hooks':
-        specifier: workspace:*
-        version: link:packages/hooks
-      '@dctxf/service':
-        specifier: workspace:*
-        version: link:packages/service
       react:
         specifier: ^18.2.0
         version: 18.2.0
