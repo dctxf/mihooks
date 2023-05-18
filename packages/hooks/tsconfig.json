@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.json",
   "exclude": ["node_modules","lib","es","__test__"],
   "compilerOptions": {
+    "baseUrl": ".",
     "rootDir": "src",
     "outDir": "lib"
   }
