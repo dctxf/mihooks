@@ -9,6 +9,7 @@
     "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
     "incremental": false,
+    "declaration": true,
     "paths": {
       "@dctxf/mihooks": ["./packages/hooks/src/index.ts"],
       "@dctxf/service": ["./packages/service/src/index.ts"]
