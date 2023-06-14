@@ -1,4 +1,3 @@
-
 /**
  * 详细文档请查看
  * @see https://bark.day.app/#/tutorial?id=%e8%af%b7%e6%b1%82%e6%96%b9%e5%bc%8f
@@ -54,6 +53,18 @@ export const pushByBark = async ({ title, body, apiUrl, ...params }: PushByBarkP
   // if (body) {
   //   url = `${url}/${encodeURIComponent(body)}`;
   // }
+  // 如果node环境 则使用node-fetch
+  if (typeof window === 'undefined') {
+    const fetch = require('node-fetch');
+    return fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+      },
+      body: JSON.stringify({ title, body, ...params }),
+    }).then(res => res.json());
+  }
+
   const res = await fetch(url, {
     method: 'POST',
     headers: {
